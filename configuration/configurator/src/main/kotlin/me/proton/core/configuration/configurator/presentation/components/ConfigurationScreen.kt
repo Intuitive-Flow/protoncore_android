@@ -142,7 +142,7 @@ private fun ConfigurationFields(
             val domains = LocalContext.current.resources.getStringArray(R.array.domains)
 
             if (showingSearchView) {
-                SearchView(
+                SearchableConfigurationTextField(
                     searchData = domains.toMutableList(),
                     onResultSelected = onResultSelected,
                     onDismissRequest = onDismissRequest

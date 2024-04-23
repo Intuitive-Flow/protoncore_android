@@ -23,7 +23,7 @@
     <string name="configuration_title_network_configuration" translatable="false">Network Configuration</string>
     <string name="configuration_text_advanced" translatable="false">Advanced</string>
     <string name="configuration_error_unknown" translatable="false">Could not save configuration. Unknown error</string>
-    <string-array name="domains">
+    <string-array name="domains" translatable="false">
         <item>production</item>
         <item>payments</item>
         <item>agassiz</item>

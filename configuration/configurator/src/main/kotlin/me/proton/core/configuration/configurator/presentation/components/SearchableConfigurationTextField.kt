@@ -39,7 +39,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SearchView(
+fun SearchableConfigurationTextField(
     searchData: List<String>,
     onResultSelected: (String) -> Unit,
     onDismissRequest: () -> Unit
@@ -60,8 +60,7 @@ fun SearchView(
                     BasicTextField(
                         value = searchText,
                         onValueChange = { searchText = it },
-                        modifier = Modifier
-                            .fillMaxWidth(),
+                        modifier = Modifier.fillMaxWidth(),
                         decorationBox = { innerTextField ->
                             if (searchText.isEmpty()) {
                                 Text("Search", color = Color.LightGray)
