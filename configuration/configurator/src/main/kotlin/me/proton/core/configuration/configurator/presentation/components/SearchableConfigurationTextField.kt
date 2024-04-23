@@ -37,6 +37,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import me.proton.core.compose.theme.ProtonDimens
 
 @Composable
 fun SearchableConfigurationTextField(
@@ -74,7 +75,7 @@ fun SearchableConfigurationTextField(
                     Text(
                         text = "Cancel",
                         modifier = Modifier
-                            .padding(horizontal = 8.dp)
+                            .padding(horizontal = ProtonDimens.SmallSpacing)
                             .clickable { onDismissRequest() }, // This calls the provided `onDismissRequest` callback
                         color = Color.White
                     )
@@ -97,7 +98,7 @@ fun ItemView(item: String, onItemClicked: (String) -> Unit) {
         text = item,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(ProtonDimens.SmallSpacing)
             .clickable { onItemClicked(item) }
     )
 }
